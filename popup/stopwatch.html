@@ -1,0 +1,50 @@
+<html>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* body {
+      height: 300px;
+    } */
+
+    #btns {
+      height: 20px;
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      grid-template-columns: 100px;
+      width: 250px;
+      gap: 10px;
+    }
+    #lapBox {
+      font-size: 2em;
+      color: red;
+      position: absolute;
+      top: 0px;
+      right: 10px;
+    }
+  </style>
+  <body>
+    <a id="back">Back</a>
+    <div id="lapBox"></div>
+    <div class="container">
+      <div class="shape">
+        <div class="ellipse1"></div>
+        <div class="ellipse2"></div>
+        <div class="ellipse3"></div>
+        <div class="ellipse4"></div>
+        <div class="ellipse5"></div>
+        <div class="ellipse6"></div>
+        <div class="ellipse7"></div>
+        <div class="ellipse8"></div>
+        <div class="ellipse9"></div>
+      </div>
+      <h1>Stopwatch</h1>
+      <div>
+        <h1 id="time">00:00</h1>
+        <div id="btns">
+          <button id="start" class="glassmorphic-button">start</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="stopwatch.js"></script>
+</html>

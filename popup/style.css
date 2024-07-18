@@ -1,0 +1,222 @@
+body {
+  width: 300px;
+  height: 160px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: white;
+  align-self: left;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  cursor: pointer;
+}
+
+h1 {
+  margin: 3px;
+}
+
+#time {
+  font-size: xx-large;
+  margin-bottom: 6px;
+  text-align: center;
+  font-weight: bold;
+}
+.shape {
+  /* Frame */
+  width: 300px;
+  height: 160px;
+
+  background: #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Ellipse 1 */
+
+.ellipse1 {
+  position: absolute;
+  width: 78px;
+  height: 80px;
+  left: 12px;
+  top: 5px;
+
+  background: #ff0000;
+  filter: blur(17.5px);
+  animation: blurAnimation 2s infinite alternate;
+}
+
+/* Ellipse 2 */
+
+.ellipse2 {
+  position: absolute;
+  width: 119px;
+  height: 112px;
+  left: 196px;
+  top: -17px;
+
+  background: #6e01dc;
+  filter: blur(17.5px);
+  animation: blurAnimation 2s infinite alternate;
+}
+
+/* Ellipse 3 */
+
+.ellipse3 {
+  position: absolute;
+  width: 119px;
+  height: 112px;
+  left: -8px;
+  top: 70px;
+
+  background: #dafe00;
+  filter: blur(17.5px);
+  animation: blurAnimation 2s infinite alternate;
+}
+
+/* Ellipse 4 */
+
+.ellipse4 {
+  position: absolute;
+  width: 119px;
+  height: 112px;
+  left: 101px;
+  top: 64px;
+
+  background: #00ffc2;
+  filter: blur(17.5px);
+  animation: blurAnimation 2s infinite alternate;
+}
+
+/* Ellipse 5 */
+
+.ellipse5 {
+  position: absolute;
+  width: 119px;
+  height: 112px;
+  left: 173px;
+  top: 57px;
+
+  background: #074dff;
+  filter: blur(17.5px);
+  animation: blurAnimation 2s infinite alternate;
+}
+
+/* Ellipse 6 */
+
+.ellipse6 {
+  position: absolute;
+  width: 42px;
+  height: 46px;
+  left: 94px;
+  top: 5px;
+
+  background: #040000;
+  filter: blur(17.5px);
+  animation: blurAnimation 2s infinite alternate;
+}
+
+/* Ellipse 7 */
+
+.ellipse7 {
+  position: absolute;
+  width: 42px;
+  height: 46px;
+  left: 152px;
+  top: 18px;
+
+  background: #ff6b00;
+  filter: blur(17.5px);
+  animation: blurAnimation 2s infinite alternate;
+}
+
+/* Ellipse 8 */
+
+.ellipse8 {
+  position: absolute;
+  width: 42px;
+  height: 46px;
+  left: 129px;
+  top: -17px;
+
+  background: #fa00ff;
+  filter: blur(17.5px);
+  animation: blurAnimation 2s infinite alternate;
+}
+
+/* Ellipse 9 */
+
+.ellipse9 {
+  position: absolute;
+  width: 42px;
+  height: 46px;
+  left: 87px;
+  top: 47px;
+
+  background: #14ff00;
+  filter: blur(17.5px);
+  animation: blurAnimation 2s infinite alternate;
+}
+
+@keyframes blurAnimation {
+  0% {
+    filter: blur(15px);
+  }
+  16.67% {
+    filter: blur(16px);
+  }
+  33.33% {
+    filter: blur(17px);
+  }
+  50% {
+    filter: blur(18px);
+  }
+  66.67% {
+    filter: blur(19px);
+  }
+  83.33% {
+    filter: blur(20px);
+  }
+  100% {
+    filter: blur(22px);
+  }
+}
+
+body h1 {
+  text-align: center;
+}
+.btns {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+.btns button {
+  margin: 5px;
+  padding: 5px;
+}
+.glassmorphic-button {
+  /* Glassmorphic Button */
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.5),
+    -20px -20px 60px rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  border-radius: 5px;
+  color: black;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  height: 30px;
+}

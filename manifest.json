@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Hello Extensions",
+  "description": "Base Level Extension",
+  "version": "2.0",
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "images/image.png"
+  },
+  "permissions": ["storage", "alarms"],
+  "background": {
+    "service_worker": "background/background.js"
+  },
+  "icons": {
+    "16": "images/image.png",
+    "32": "images/image.png",
+    "48": "images/image.png",
+    "128": "images/image.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["scripts/content.js"]
+    }
+  ]
+}
